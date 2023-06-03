@@ -8,7 +8,6 @@ export default async function Detail(props) {
   const result = await db
     .collection("post")
     .findOne({ _id: new ObjectId(props.params.id) });
-  console.log(props);
   return (
     <div>
       <h4>상세 페이지</h4>
